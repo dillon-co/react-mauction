@@ -16,7 +16,7 @@ class Sentence extends React.Component {
 
   render () {
     return (
-        <div className='container centered'>
+        <div className='container card'>
           <h1>{this.state.sentence}</h1>
           <button onClick={this.createNewSentence.bind(this)}  className='btn btn-success'>Create Random Sentence</button>
         </div>

@@ -25,8 +25,17 @@ class NewPhrase extends React.Component {
   render () {
     return(
       <div>
-        <div className='card'>
-          <input type="text" onChange={this.showText} placeholder="Type Of Person, (e.g. first to the front, last to stay standing)" id='textInput'/>
+        <div className='container jumbotron'>
+          <input type="text" onChange={this.showText} placeholder="Type Of Person" id='textInput'/>
+          <h4>Things to leave out</h4>
+          <ul>
+            <li>
+              weather they owe or recieve money
+            </li>
+            <li>
+              how much money is involved
+            </li>
+          </ul>
           <br/><br/>
           <button className='btn btn-primary' onClick={this.createPhrase.bind(this)}>Create Phrase</button>
         </div>
