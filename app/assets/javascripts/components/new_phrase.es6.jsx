@@ -26,6 +26,7 @@ class NewPhrase extends React.Component {
     return(
       <div>
         <div className='container jumbotron'>
+          <h3>Who do you want to reward?</h3>
           <input type="text" onChange={this.showText} placeholder="Type Of Person" id='textInput'/>
           <h4>Things to leave out</h4>
           <ul>
